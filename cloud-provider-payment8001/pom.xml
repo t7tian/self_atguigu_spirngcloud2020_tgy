@@ -12,6 +12,12 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -59,6 +65,9 @@
             <groupId>com.mucf.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
         </dependency>
+
+
+
     </dependencies>
 
 </project>

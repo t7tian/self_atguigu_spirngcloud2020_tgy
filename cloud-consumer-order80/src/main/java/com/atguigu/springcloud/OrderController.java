@@ -7,14 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @ClassName OrderController
- */
 @RestController
 @Slf4j
 public class OrderController {
 
-    private static final String PAYMENT_URL = "http://localhost:8001";
+//    private static final String PAYMENT_URL = "http://localhost:8001";
+    private static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Autowired
     private RestTemplate restTemplate;
