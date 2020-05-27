@@ -1,0 +1,8 @@
+server:
+  port: 9001
+
+spring:
+    #加上这个，保证修改了代码，应用不重启得同时加载类，节约时间
+  devtools:
+    restart:
+      enabled: false
