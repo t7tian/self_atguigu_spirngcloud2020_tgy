@@ -29,9 +29,9 @@ eureka:
     fetchRegistry: true
     service-url:
       #单机版
-      #defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
       # 集群版
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   #添加之后，可以在eureka那边看到这个名称，以示区分不同得提供者
   instance:
     instance-id: payment8002
