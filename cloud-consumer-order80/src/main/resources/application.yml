@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: cloud-order-service
+  zipkin:
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        probability: 1
+
   #加上这个，保证修改了代码，应用不重启得同时加载类，节约时间
   devtools:
     restart:
