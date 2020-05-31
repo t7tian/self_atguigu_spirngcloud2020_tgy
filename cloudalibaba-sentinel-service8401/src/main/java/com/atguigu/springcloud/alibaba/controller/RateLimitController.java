@@ -38,4 +38,10 @@ public class RateLimitController {
     public CommonResult customerBlockHandler() {
         return new CommonResult(200, "按客戶自定义", new Payment(2020L, "serial003"));
     }
+
+
+
+    //sentinel配置持久化json
+//    [{"resource":"/ratelimit/byUr1", "1imitApp":"default", "grade":1,"count":1, "strategy":0, "controlBehavior":0, "clusterMode":false}]
+
 }
